@@ -1,0 +1,67 @@
+footer p {
+  font-size: 12px;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oooh-baby-regular {
+  font-family: "Oooh Baby", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Botón Principal */
+
+.dynamic-button {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  /* Bordes redondeados */
+  padding: 10px 30px;
+  /* Espaciado interno ajustado */
+  transition: all 0.3s ease;
+}
+
+/* Hover: Cambiar color de fondo y mover ícono */
+
+.dynamic-button:hover {
+  background-color: #a43a3c;
+  /* Color más oscuro */
+  transform: scale(1.05);
+  /* Ligero aumento de tamaño */
+}
+
+.dynamic-button:hover i {
+  transform: translateX(10px);
+  /* Mover la flecha hacia la derecha */
+}
+
+/* Efecto Subrayado Dinámico */
+
+.dynamic-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.dynamic-button:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/* Ícono Animado */
+
+.dynamic-button i {
+  transition: transform 0.3s ease;
+}
